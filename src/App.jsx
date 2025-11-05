@@ -1,13 +1,19 @@
-import React from "react";
-import ComingSoon from "./components/ComingSoon"; // import naše komponente
+import { useState } from "react";
+import Home from "./components/Home";
+import ComingSoon from "./components/ComingSoon";
 
 function App() {
+  // State to show/hide coming soon page
+  const [showComingSoon, setShowComingSoon] = useState(false);
+
   return (
-    <div className="min-h-screen flex flex-col">
-      <main className="flex-grow">
-        <ComingSoon /> {/* ovdje prikazujemo ComingSoon komponentu */}
-      </main>
-    </div>
+    <>
+      {showComingSoon ? (
+        <ComingSoon onEnterHome={() => setShowComingSoon(false)} />
+      ) : (
+        <Home />
+      )}
+    </>
   );
 }
 

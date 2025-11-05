@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/jskphotography.ba/static/css/main.4c1802a6.css",
-    "main.js": "/jskphotography.ba/static/js/main.65e8243a.js",
+    "main.css": "/jskphotography.ba/static/css/main.6426271b.css",
+    "main.js": "/jskphotography.ba/static/js/main.2a21ffc6.js",
     "static/js/453.172f7538.chunk.js": "/jskphotography.ba/static/js/453.172f7538.chunk.js",
     "index.html": "/jskphotography.ba/index.html",
-    "main.4c1802a6.css.map": "/jskphotography.ba/static/css/main.4c1802a6.css.map",
-    "main.65e8243a.js.map": "/jskphotography.ba/static/js/main.65e8243a.js.map",
+    "main.6426271b.css.map": "/jskphotography.ba/static/css/main.6426271b.css.map",
+    "main.2a21ffc6.js.map": "/jskphotography.ba/static/js/main.2a21ffc6.js.map",
     "453.172f7538.chunk.js.map": "/jskphotography.ba/static/js/453.172f7538.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c1802a6.css",
-    "static/js/main.65e8243a.js"
+    "static/css/main.6426271b.css",
+    "static/js/main.2a21ffc6.js"
   ]
 }
