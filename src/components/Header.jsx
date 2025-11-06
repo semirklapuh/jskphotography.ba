@@ -80,7 +80,7 @@ export default function Header() {
               O nama
             </a>
             <a href="#" className="text-gray-800 hover:text-gray-500">
-              Kontakt
+             <Link to="/kontakt" className="text-gray-800 hover:text-gray-500">Kontakt</Link>
             </a>
           </nav>
         </div>
