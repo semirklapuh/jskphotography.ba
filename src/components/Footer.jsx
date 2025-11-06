@@ -3,7 +3,7 @@ import { MdEmail, MdPhone } from "react-icons/md";
 
 export default function Footer() {
   return (
-    <footer className="text-gray-800 py-8 mt-12"     style={{
+    <footer className="text-gray-800 py-8"     style={{
     background: "linear-gradient(to right, #B3A398, #C6DCBA)",
   }}>
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">

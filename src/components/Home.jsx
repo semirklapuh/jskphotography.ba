@@ -39,26 +39,29 @@ export default function Home() {
   const images = isMobile ? mobileImages : desktopImages;
 
   return (
-    <div className="relative h-screen w-screen pt-16">
-      <Header />
+    <div className="relative w-screen pt-16">
+  <Header />
 
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        navigation
-        pagination={{ clickable: true }}
-        autoplay={{ delay: 4000, disableOnInteraction: false }}
-        loop
-        className="h-screen w-full"
-      >
-        {images.map((src, index) => (
-          <SwiperSlide key={index}>
-            <div
-              className="h-screen w-full bg-center bg-cover"
-              style={{ backgroundImage: `url(${src})` }}
-            ></div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+  <div style={{ height: `calc(100vh - 64px)` }}> 
+    <Swiper
+      modules={[Navigation, Pagination, Autoplay]}
+      navigation
+      pagination={{ clickable: true }}
+      autoplay={{ delay: 4000, disableOnInteraction: false }}
+      loop
+      className="w-full h-full"
+    >
+      {images.map((src, index) => (
+        <SwiperSlide key={index}>
+          <img
+            src={src}
+            alt={`slide-${index}`}
+            className="w-full h-full object-cover object-center"
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </div>
+</div>
   );
 }
