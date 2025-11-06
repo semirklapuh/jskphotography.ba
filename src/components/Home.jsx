@@ -39,7 +39,7 @@ export default function Home() {
   const images = isMobile ? mobileImages : desktopImages;
 
   return (
-    <div className="relative h-screen w-screen">
+    <div className="relative h-screen w-screen pt-16">
       <Header />
 
       <Swiper

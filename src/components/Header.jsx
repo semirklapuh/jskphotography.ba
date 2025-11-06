@@ -10,10 +10,14 @@ export default function Header() {
         <div className="flex justify-between items-center h-16 relative">
           {/* Logo centered */}
           <div className="flex-1 flex justify-center">
-            <h1 className="text-2xl font-bold text-gray-800 cursor-pointer" 
-            style={{ fontFamily: '"Snell Roundhand", cursive' }}>
-              JSKphotography.ba
-            </h1>
+         <Link
+            to="/"
+            onClick={() => setIsOpen(false)}
+            className="text-2xl font-bold text-gray-800 cursor-pointer"
+            style={{ fontFamily: '"Snell Roundhand", cursive' }}
+             >
+            JSKphotography.ba
+            </Link>
           </div>
 
           {/* Desktop menu */}
@@ -70,7 +74,8 @@ export default function Header() {
       {isOpen && (
         <div className="md:hidden bg-white shadow-md">
           <nav className="flex flex-col p-4 space-y-2">
-            <a href="#" className="text-gray-800 hover:text-gray-500">
+            <a href="#" className="text-gray-800 hover:text-gray-500"
+            onClick={() => setIsOpen(false)}>
               Početna
             </a>
             <a href="#" className="text-gray-800 hover:text-gray-500">

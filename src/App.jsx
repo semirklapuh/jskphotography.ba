@@ -6,6 +6,7 @@ import Home from "./components/Home";
 //import About from "./components/About";
 import ContactForm from "./components/ContactForm";
 import ComingSoon from "./components/ComingSoon";
+import Footer from "./components/Footer";
 
 function App() {
   const [showComingSoon, setShowComingSoon] = useState(false);
@@ -25,6 +26,7 @@ function App() {
           <Route path="/kontakt" element={<ContactForm />} />
         </Routes>
       </main>
+      <Footer />
     </Router>
   );
 }
