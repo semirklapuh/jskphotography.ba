@@ -1,19 +1,31 @@
 import { useState } from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom"; 
+import Header from "./components/Header";
 import Home from "./components/Home";
+//import Portfolio from "./components/Portfolio";
+//import About from "./components/About";
+import ContactForm from "./components/ContactForm";
 import ComingSoon from "./components/ComingSoon";
 
 function App() {
-  // State to show/hide coming soon page
   const [showComingSoon, setShowComingSoon] = useState(false);
 
+  if (showComingSoon) {
+    return <ComingSoon onEnterHome={() => setShowComingSoon(false)} />;
+  }
+
   return (
-    <>
-      {showComingSoon ? (
-        <ComingSoon onEnterHome={() => setShowComingSoon(false)} />
-      ) : (
-        <Home />
-      )}
-    </>
+    <Router>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/portfolio" element={<Portfolio />} /> */}
+          {/* <Route path="/o-nama" element={<About />} /> */}
+          <Route path="/kontakt" element={<ContactForm />} />
+        </Routes>
+      </main>
+    </Router>
   );
 }
 
