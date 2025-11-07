@@ -29,7 +29,7 @@ export default function Header() {
               Portfolio
             </a>
             <a href="#" className="text-gray-800 hover:text-gray-500">
-              O nama
+              <Link to="/o-nama" className="text-gray-800 hover:text-gray-500">O nama</Link>
             </a>
             <a href="#" className="text-gray-800 hover:text-gray-500">
               <Link to="/kontakt" className="text-gray-800 hover:text-gray-500">Kontakt</Link>
@@ -82,7 +82,7 @@ export default function Header() {
               Portfolio
             </a>
             <a href="#" className="text-gray-800 hover:text-gray-500">
-              O nama
+             <Link to="/o-nama" className="text-gray-800 hover:text-gray-500">O nama</Link>
             </a>
             <a href="#" className="text-gray-800 hover:text-gray-500">
              <Link to="/kontakt" className="text-gray-800 hover:text-gray-500">Kontakt</Link>

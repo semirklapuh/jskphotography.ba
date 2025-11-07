@@ -7,6 +7,7 @@ import Home from "./components/Home";
 import ContactForm from "./components/ContactForm";
 import ComingSoon from "./components/ComingSoon";
 import Footer from "./components/Footer";
+import AboutUs from "./components/AboutUs";
 
 function App() {
   const [showComingSoon, setShowComingSoon] = useState(false);
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           {/* <Route path="/portfolio" element={<Portfolio />} /> */}
           {/* <Route path="/o-nama" element={<About />} /> */}
+          <Route path="/o-nama" element={<AboutUs />} />
           <Route path="/kontakt" element={<ContactForm />} />
         </Routes>
       </main>
