@@ -10,7 +10,6 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
 
-  // Detect screen width for responsive image set
   useEffect(() => {
     const checkScreen = () => setIsMobile(window.innerWidth < 768);
     checkScreen();
@@ -18,7 +17,6 @@ export default function Home() {
     return () => window.removeEventListener("resize", checkScreen);
   }, []);
 
-  // Desktop images
   const desktopImages = [
     process.env.PUBLIC_URL + "/images/jskphotography.ba-08106.jpg",
     process.env.PUBLIC_URL + "/images/jskphotography.ba-08112.jpg",
@@ -27,7 +25,6 @@ export default function Home() {
     process.env.PUBLIC_URL + "/images/jskphotography.ba-08167.jpg",
   ];
 
-  // Mobile images (use lighter, vertical, or cropped versions)
   const mobileImages = [
     process.env.PUBLIC_URL + "/images/jskphotography.ba-08064.jpg",
     process.env.PUBLIC_URL + "/images/jskphotography.ba-08118.jpg",
@@ -39,29 +36,29 @@ export default function Home() {
   const images = isMobile ? mobileImages : desktopImages;
 
   return (
-    <div className="relative w-screen pt-16">
-  <Header />
+    <div className="relative w-screen h-screen">
+      {/* Header floating above */}
+      <Header />
 
-  <div style={{ height: `calc(100vh - 64px)` }}> 
-    <Swiper
-      modules={[Navigation, Pagination, Autoplay]}
-      navigation
-      pagination={{ clickable: true }}
-      autoplay={{ delay: 4000, disableOnInteraction: false }}
-      loop
-      className="w-full h-full"
-    >
-      {images.map((src, index) => (
-        <SwiperSlide key={index}>
-          <img
-            src={src}
-            alt={`slide-${index}`}
-            className="w-full h-full object-cover object-center"
-          />
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  </div>
-</div>
+      {/* Swiper covers full viewport */}
+      <Swiper
+        modules={[Navigation, Pagination, Autoplay]}
+        navigation
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        loop
+        className="w-full h-full"
+      >
+        {images.map((src, index) => (
+          <SwiperSlide key={index}>
+            <img
+              src={src}
+              alt={`slide-${index}`}
+              className="w-full h-full object-cover object-center"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 }

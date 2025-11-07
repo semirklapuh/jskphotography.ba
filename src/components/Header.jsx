@@ -5,42 +5,44 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full bg-white shadow-md fixed top-0 left-0 z-50">
+    <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] md:w-[80%] lg:w-[70%] rounded-3xl backdrop-blur-xl bg-white/20 border border-white/30 shadow-lg transition-all">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 relative">
           {/* Logo centered */}
-          <div className="flex-1 flex justify-center">
-         <Link
-            to="/"
-            onClick={() => setIsOpen(false)}
-            className="text-2xl font-bold text-gray-800 cursor-pointer"
-            style={{ fontFamily: '"Snell Roundhand", cursive' }}
-             >
-            JSKphotography.ba
-            </Link>
-          </div>
+        <div className="flex-1 flex justify-center px-4 md:px-0">
+<Link
+  to="/"
+  onClick={() => setIsOpen(false)}
+  className="text-2xl font-bold text-gray-900 cursor-pointer drop-shadow-sm px-4 py-2"
+  style={{ fontFamily: '"Snell Roundhand", cursive' }}
+>
+  JSKphotography.ba
+</Link>
+</div>
+
+
 
           {/* Desktop menu */}
-          <nav className="hidden md:flex absolute right-0 space-x-6">
-            <a href="#" className="text-gray-800 hover:text-gray-500">
+          <nav className="hidden md:flex absolute right-4 space-x-6">
+            <Link to="/" className="text-gray-900 hover:text-[#B3A398] transition">
               Početna
-            </a>
-            <a href="#" className="text-gray-800 hover:text-gray-500">
+            </Link>
+            <Link to="/" className="text-gray-900 hover:text-[#B3A398] transition">
               Portfolio
-            </a>
-            <a href="#" className="text-gray-800 hover:text-gray-500">
-              <Link to="/o-nama" className="text-gray-800 hover:text-gray-500">O nama</Link>
-            </a>
-            <a href="#" className="text-gray-800 hover:text-gray-500">
-              <Link to="/kontakt" className="text-gray-800 hover:text-gray-500">Kontakt</Link>
-            </a>
+            </Link>
+            <Link to="/o-nama" className="text-gray-900 hover:text-[#B3A398] transition">
+              O nama
+            </Link>
+            <Link to="/kontakt" className="text-gray-900 hover:text-[#B3A398] transition">
+              Kontakt
+            </Link>
           </nav>
 
           {/* Hamburger menu for mobile */}
-          <div className="absolute right-0 md:hidden">
+          <div className="absolute right-4 md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-800 focus:outline-none"
+              className="text-gray-900 focus:outline-none"
             >
               <svg
                 className="w-6 h-6"
@@ -72,21 +74,36 @@ export default function Header() {
 
       {/* Mobile dropdown menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md">
+        <div className="md:hidden bg-white/30 backdrop-blur-xl shadow-lg border-t border-white/20 rounded-b-3xl">
           <nav className="flex flex-col p-4 space-y-2">
-            <a href="#" className="text-gray-800 hover:text-gray-500"
-            onClick={() => setIsOpen(false)}>
+            <Link
+              to="/"
+              onClick={() => setIsOpen(false)}
+              className="text-gray-900 hover:text-[#B3A398] transition"
+            >
               Početna
-            </a>
-            <a href="#" className="text-gray-800 hover:text-gray-500">
+            </Link>
+            <Link
+              to="/portfolio"
+              onClick={() => setIsOpen(false)}
+              className="text-gray-900 hover:text-[#B3A398] transition"
+            >
               Portfolio
-            </a>
-            <a href="#" className="text-gray-800 hover:text-gray-500">
-             <Link to="/o-nama" className="text-gray-800 hover:text-gray-500">O nama</Link>
-            </a>
-            <a href="#" className="text-gray-800 hover:text-gray-500">
-             <Link to="/kontakt" className="text-gray-800 hover:text-gray-500">Kontakt</Link>
-            </a>
+            </Link>
+            <Link
+              to="/o-nama"
+              onClick={() => setIsOpen(false)}
+              className="text-gray-900 hover:text-[#B3A398] transition"
+            >
+              O nama
+            </Link>
+            <Link
+              to="/kontakt"
+              onClick={() => setIsOpen(false)}
+              className="text-gray-900 hover:text-[#B3A398] transition"
+            >
+              Kontakt
+            </Link>
           </nav>
         </div>
       )}
