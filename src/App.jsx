@@ -8,6 +8,7 @@ import ContactForm from "./components/ContactForm";
 import ComingSoon from "./components/ComingSoon";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
+import WeddingsGallery from "./components/WeddingsGallery";
 
 function App() {
   const [showComingSoon, setShowComingSoon] = useState(false);
@@ -22,7 +23,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/portfolio" element={<Portfolio />} /> */}
+          <Route path="/portofolio" element={<WeddingsGallery />} />
           {/* <Route path="/o-nama" element={<About />} /> */}
           <Route path="/o-nama" element={<AboutUs />} />
           <Route path="/kontakt" element={<ContactForm />} />

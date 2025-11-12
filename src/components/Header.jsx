@@ -27,7 +27,7 @@ export default function Header() {
             <Link to="/" className="text-gray-900 hover:text-[#B3A398] transition">
               Početna
             </Link>
-            <Link to="/" className="text-gray-900 hover:text-[#B3A398] transition">
+            <Link to="/portofolio" className="text-gray-900 hover:text-[#B3A398] transition">
               Portfolio
             </Link>
             <Link to="/o-nama" className="text-gray-900 hover:text-[#B3A398] transition">
