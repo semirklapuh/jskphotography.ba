@@ -5,25 +5,24 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] md:w-[80%] lg:w-[70%] rounded-3xl backdrop-blur-xl bg-white/20 border border-white/30 shadow-lg transition-all">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] xl:w-[75%] rounded-3xl backdrop-blur-xl bg-white/20 border border-white/30 shadow-lg transition-all">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex justify-between items-center h-16 relative">
-          {/* Logo centered */}
-        <div className="flex-1 flex justify-center px-4 md:px-0">
-<Link
-  to="/"
-  onClick={() => setIsOpen(false)}
-  className="text-2xl font-bold text-gray-900 cursor-pointer drop-shadow-sm px-4 py-2"
-  style={{ fontFamily: '"Snell Roundhand", cursive' }}
->
-  JSKphotography.ba
-</Link>
-</div>
+          {/* Left placeholder for symmetry */}
+          <div className="flex-1" />
 
+          {/* Centered logo */}
+          <Link
+            to="/"
+            onClick={() => setIsOpen(false)}
+            className="text-2xl font-bold text-gray-900 cursor-pointer drop-shadow-sm px-4 py-2 text-center"
+            style={{ fontFamily: '"Snell Roundhand", cursive' }}
+          >
+            JSKphotography.ba
+          </Link>
 
-
-          {/* Desktop menu */}
-          <nav className="hidden md:flex absolute right-4 space-x-6">
+          {/* Desktop menu (hidden below 1024px) */}
+          <nav className="hidden xl:flex flex-1 justify-end space-x-6">
             <Link to="/" className="text-gray-900 hover:text-[#B3A398] transition">
               Početna
             </Link>
@@ -38,8 +37,8 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* Hamburger menu for mobile */}
-          <div className="absolute right-4 md:hidden">
+          {/* Hamburger for mobile/tablet (visible below xl) */}
+          <div className="flex-1 flex justify-end xl:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-gray-900 focus:outline-none"
@@ -74,7 +73,7 @@ export default function Header() {
 
       {/* Mobile dropdown menu */}
       {isOpen && (
-        <div className="md:hidden bg-white/30 backdrop-blur-xl shadow-lg border-t border-white/20 rounded-b-3xl">
+        <div className="xl:hidden bg-white/30 backdrop-blur-xl shadow-lg border-t border-white/20 rounded-b-3xl">
           <nav className="flex flex-col p-4 space-y-2">
             <Link
               to="/"
