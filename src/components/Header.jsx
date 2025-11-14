@@ -16,7 +16,7 @@ export default function Header() {
             to="/"
             onClick={() => setIsOpen(false)}
             className="text-2xl font-bold text-gray-900 cursor-pointer drop-shadow-sm px-4 py-2 text-center"
-            style={{ fontFamily: '"Snell Roundhand", cursive' }}
+            style={{ fontFamily: '"MyCustomFont", cursive' }}
           >
             JSKphotography.ba
           </Link>

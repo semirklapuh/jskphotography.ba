@@ -42,3 +42,19 @@ code {
   opacity: 1;
   transform: scale(1.3); /* optional: makes active bullet larger */
 }
+
+@font-face {
+  font-family: 'MyCustomFont'; /* This is the name you will use in JS */
+  src: url('/public/fonts/DancingScript-VariableFont_wght.ttf') format('ttf'),
+       url('/public/fonts/DancingScript-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/public/fonts/DancingScript-Bold.ttf') format('ttf'),
+       url('/public/fonts/DancingScript-Bold.ttf') format('ttf');
+  font-weight: 700;
+  font-style: normal;
+}

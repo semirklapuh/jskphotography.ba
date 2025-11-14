@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import EmotionCard from "../components/EmotionCard";
+import InstagramFeed from "../components/InstagramFeed";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -91,7 +92,7 @@ export default function Home() {
     process.env.PUBLIC_URL + "/images/jskphotography.ba-08238.jpg", // bottom-right
   ]}
 />
-
+      <InstagramFeed />
     </div>
   );
 }
