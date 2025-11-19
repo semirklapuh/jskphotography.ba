@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import EmotionCard from "../components/EmotionCard";
 import InstagramFeed from "../components/InstagramFeed";
+import ShowcaseVideo from "../components/ShowcaseVideo";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -40,7 +41,8 @@ export default function Home() {
   return (
     <div className="relative w-screen h-auto">
       <Header />
-
+  {/* Only show on desktop */}
+  {!isMobile && <ShowcaseVideo className="mb-20" />}
       <div className="h-screen">
         {/* Swiper */}
         <Swiper

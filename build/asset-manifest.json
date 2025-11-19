@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/jskphotography.ba/static/css/main.a5fcbf6d.css",
-    "main.js": "/jskphotography.ba/static/js/main.27ac014e.js",
+    "main.css": "/jskphotography.ba/static/css/main.4dde1eca.css",
+    "main.js": "/jskphotography.ba/static/js/main.d3a18ada.js",
     "static/js/453.172f7538.chunk.js": "/jskphotography.ba/static/js/453.172f7538.chunk.js",
     "static/media/DancingScript-VariableFont_wght.ttf": "/jskphotography.ba/static/media/DancingScript-VariableFont_wght.e6757278cd7ce626ed96.ttf",
     "static/media/DancingScript-Bold.ttf": "/jskphotography.ba/static/media/DancingScript-Bold.cfb094553fd9c992628a.ttf",
     "static/media/DancingScript-Regular.ttf": "/jskphotography.ba/static/media/DancingScript-Regular.7e203cef1079837be7e0.ttf",
     "index.html": "/jskphotography.ba/index.html",
-    "main.a5fcbf6d.css.map": "/jskphotography.ba/static/css/main.a5fcbf6d.css.map",
-    "main.27ac014e.js.map": "/jskphotography.ba/static/js/main.27ac014e.js.map",
+    "main.4dde1eca.css.map": "/jskphotography.ba/static/css/main.4dde1eca.css.map",
+    "main.d3a18ada.js.map": "/jskphotography.ba/static/js/main.d3a18ada.js.map",
     "453.172f7538.chunk.js.map": "/jskphotography.ba/static/js/453.172f7538.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5fcbf6d.css",
-    "static/js/main.27ac014e.js"
+    "static/css/main.4dde1eca.css",
+    "static/js/main.d3a18ada.js"
   ]
 }
