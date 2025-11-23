@@ -21,18 +21,17 @@ export default function Home() {
   }, []);
 
   const desktopImages = [
-    process.env.PUBLIC_URL + "/images/jskphotography.ba-08106.jpg",
-    process.env.PUBLIC_URL + "/images/jskphotography.ba-08112.jpg",
-    process.env.PUBLIC_URL + "/images/jskphotography.ba-08123.jpg",
+    process.env.PUBLIC_URL + "/images/jskphotography.ba-04528.jpg",
+    process.env.PUBLIC_URL + "/images/jskphotography.ba-00035.jpg",
+    process.env.PUBLIC_URL + "/images/jskphotography.ba-09878.jpg",
     process.env.PUBLIC_URL + "/images/jskphotography.ba-08147.jpg",
-    process.env.PUBLIC_URL + "/images/jskphotography.ba-08167.jpg",
   ];
 
   const mobileImages = [
-    process.env.PUBLIC_URL + "/images/jskphotography.ba-08064.jpg",
-    process.env.PUBLIC_URL + "/images/jskphotography.ba-08118.jpg",
+    process.env.PUBLIC_URL + "/images/jskphotography.ba-04554.jpg",
+    process.env.PUBLIC_URL + "/images/jskphotography.ba-04573.jpg",
+    process.env.PUBLIC_URL + "/images/jskphotography.ba-09978.jpg",
     process.env.PUBLIC_URL + "/images/jskphotography.ba-08195.jpg",
-    process.env.PUBLIC_URL + "/images/jskphotography.ba-08238.jpg",
     process.env.PUBLIC_URL + "/images/jskphotography.ba-08358.jpg",
   ];
 
@@ -70,9 +69,9 @@ export default function Home() {
         title="True Emotions"
         text="Every photograph tells a story — not through poses, but through genuine emotions. I capture the fleeting moments that reveal laughter, tears, and connection — the true essence of your wedding day, as it naturally unfolds."
         images={[
-          process.env.PUBLIC_URL + "/images/jskphotography.ba-08147.jpg",
-          process.env.PUBLIC_URL + "/images/jskphotography.ba-08167.jpg",
-          process.env.PUBLIC_URL + "/images/jskphotography.ba-08167.jpg",
+          process.env.PUBLIC_URL + "/images/Emotions/jskphotography.ba-03793.jpg",
+          process.env.PUBLIC_URL + "/images/Emotions/jskphotography.ba-06355.jpg",
+          process.env.PUBLIC_URL + "/images/Emotions/jskphotography.ba-09279.jpg",
         ]}
       />
       <EmotionCard
